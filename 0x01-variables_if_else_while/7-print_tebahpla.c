@@ -8,12 +8,13 @@
  */
 int main(void)
 {
-char low;
-for (low = 'a' ; low >= 'z' ; low--)
+char c;
+for (c = 'z' ; c >= 'a' ; c--)
 {
-putchar(low);
+putchar(c);
 }
 putchar('\n');
 return (0);
 }
+
 
