@@ -15,7 +15,7 @@ putchar('0' + n);
 }
 else
 {
-putchar(90 + n);
+putchar(87 + n);
 }
 }
 putchar('\n');
