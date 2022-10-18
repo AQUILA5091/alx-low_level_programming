@@ -1,17 +1,19 @@
 #include "main.h"
 /**
-* main - check the code.
-* print_alphabet_x10 -in lowercase followed by new line
+* print_alphabet_x10 - prints alphabet in lowercass x10 with ending new line
+*
 * Return: void, and prints the alphabet on the standard output
 */
 void print_alphabet_x10(void)
 {
-char i;
-int j;
-for (j = 0; j < 10; j++)
+int letterz = 'a';
+int i;
+for (i = 1; i <= 10; i++)
 {
-for (i = 'a'; i <= 'z'; i++)
-_putchar(i);
+for (letterz = 'a'; letterz <= 'z'; letterz++)
+{	  
+_putchar(letterz);
+}
 _putchar('\n');
 }
 }
