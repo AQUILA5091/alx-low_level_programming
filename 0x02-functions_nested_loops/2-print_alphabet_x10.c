@@ -2,7 +2,7 @@
 /**
 * main - check the code.
 * print_alphabet_x10 -in lowercase followed by new line
-* Return: Always 0.
+* Return: void, and prints the alphabet on the standard output
 */
 void print_alphabet_x10(void)
 {
