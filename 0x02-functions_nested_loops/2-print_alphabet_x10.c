@@ -11,7 +11,7 @@ int i;
 for (i = 1; i <= 10; i++)
 {
 for (letterz = 'a'; letterz <= 'z'; letterz++)
-{	  
+{
 _putchar(letterz);
 }
 _putchar('\n');
