@@ -59,65 +59,31 @@ int j = 0;
 int k = *i;
 char sep[14] = " \t\n,;.!?\"(){}";
 char is_sep = 0;
-  
-
-  
-  while (s[k] != '\0' && !is_sep)
-    
-    {
-      
-      j = 0;
-      
-      while (j < 13)
-	
-	{
-	  
-	  if (s[k] == sep[j])
-	    
-	    {
-	      
-	      *i = k;
-	      
-	      is_sep = 1;
-	      
-	    }
-	  
-	  j++;
-	  
-	}
-      
-      k++;
-      
-    }
-  
-  *i = k;
-  
-}
-
-
-
-/**
-
- * is_letter - compares if input is in the range of ascii letters
-
- * @c: character to be compared
-
- *
-
- * Return: 1 if c is a letter, 0 otherwise
-
- */
-
-
-
-int is_letter(char c)
-  
+while (s[k] != '\0' && !is_sep)
 {
-  
-  if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-    
-    return (1);
-  
-  return (0);
-  
+j = 0;
+while (j < 13)
+{	  
+if (s[k] == sep[j])
+{
+*i = k;
+is_sep = 1;
+}
+j++;
+}
+k++;
+}
+*i = k;
+}
+/**
+* is_letter - compares if input is in the range of ascii letters
+* @c: character to be compared
+*
+* Return: 1 if c is a letter, 0 otherwise
+*/
+int is_letter(char c)
+{
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+return (1);
+return (0);
 }
